@@ -1,7 +1,7 @@
 import getInfo from "./getInfo";
 import planetImg from "./img/planet.jpg";
 
-async function renderPlanets(currentPage) {
+async function renderPlanets(currentPage = 1) {
   const container = document.getElementById("container-planets");
   const planets = await getInfo("planets", { page: currentPage });
   container.innerHTML = "";
