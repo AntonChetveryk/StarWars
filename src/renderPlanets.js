@@ -10,7 +10,7 @@ async function renderPlanets(currentPage = 1) {
     div.className = "planets";
     div.innerHTML = `
     <img src=${planetImg} alt="avatar" class='planetImg'/>
-    <p>planet: ${planet.name}<p>
+     <p>planet: ${planet.name}<p>
     `;
     container.append(div);
   });
